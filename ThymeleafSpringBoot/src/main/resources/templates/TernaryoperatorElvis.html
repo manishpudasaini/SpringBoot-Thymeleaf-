@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Elvis</title>
+</head>
+<body>
+
+//thymeleaf for style & elvis
+    <h1 th:text="${isActive}? Active : InActive"  th:style="${isActive}? 'color:red':'color:blue'"></h1>
+</body>
+</html>

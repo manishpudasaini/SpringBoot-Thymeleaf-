@@ -17,6 +17,7 @@ public class MyController {
         return "home";
     }
 
+    //Iterator - print multiple value using th:each it is ame like for each
     @GetMapping("/nameList")
     public  String iterator(Model m){
         List<String> names = new ArrayList<>();
@@ -27,5 +28,15 @@ public class MyController {
         names.add("modric");
         m.addAttribute("nameList",names);
         return "iterator";
+    }
+
+
+    //Elvis - It is lke ternary operator
+    @GetMapping("/elvis")
+    public String conditional(Model model){
+
+        model.addAttribute("isActive",false);
+
+        return "TernaryoperatorElvis";
     }
 }
