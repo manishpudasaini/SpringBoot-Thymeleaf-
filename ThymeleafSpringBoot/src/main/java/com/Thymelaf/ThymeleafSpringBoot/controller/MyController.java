@@ -39,4 +39,11 @@ public class MyController {
 
         return "TernaryoperatorElvis";
     }
+
+    //if Unless - it is same like if else condition
+    @GetMapping("/ifUnless")
+    public String ifUnless(Model model){
+        model.addAttribute("gender","m");
+        return "ifUnless";
+    }
 }
