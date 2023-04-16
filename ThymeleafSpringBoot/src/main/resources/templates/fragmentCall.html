@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragment call</title>
+</head>
+<body>
+  <div >
+
+       <nav th:insert="header">
+       </nav>
+
+      <h1>fragment replace example</h1>
+
+  </div>
+
+  <div th:replace="header">
+
+      <h1>fragment replace example</h1>
+
+  </div>
+
+
+
+</body>
+</html>
